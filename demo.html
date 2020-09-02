@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--? tailwind css cdn -->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Skeleton component</title>
+
+    <!-- load skeleton component from js file -->
+    <script type="module" defer>
+      import Skeleton from './skeleton.min.js'
+
+      customElements.define('skeleton-box', Skeleton)
+    </script>
+    <style>
+      :root {
+        --skeleton-wave: red;
+        --skeleton: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 500px; margin: 100px">
+      <div class="md:flex">
+        <div class="md:flex-shrink-0">
+          <img
+            class="rounded-lg md:w-56"
+            src="https://images.unsplash.com/photo-1598763555534-3d471d7e9727?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+            alt="unsplash picture"
+          />
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-6">
+          <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+            Marketing
+          </div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-1000">
+            Finding customers for your new business
+          </a>
+          <p class="mt-2 text-gray-600">
+            Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.
+          </p>
+        </div>
+      </div>
+      <div class="md:flex mt-4">
+        <div class="md:flex-shrink-0">
+          <skeleton-box width="224" height="150" borderRadius="50%" />
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-6 w-full">
+          <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+            <skeleton-box placeholder="Marketing" />
+          </div>
+          <div class="block mt-1 text-lg leading-tight font-semibold text-gray-1000">
+            <skeleton-box lines="2" />
+        </div>
+          <skeleton-box lines="4" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
