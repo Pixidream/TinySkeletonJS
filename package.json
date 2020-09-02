@@ -1,7 +1,7 @@
 {
     "name": "tinyskeletonjs",
     "displayName": "TinySkeletonJS",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "light skeleton compatible with any javascript framework",
     "license": "MIT",
     "repository": "Pixidream/TinySkeletonJS",
