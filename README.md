@@ -8,13 +8,15 @@
   <br />
   <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
   <img src="https://forthebadge.com/images/badges/made-with-javascript.svg" />
+  <br />
+  <img src="https://img.shields.io/github/license/pixidream/TinySkeletonJS?style=for-the-badge">
 </div>
 
 ---
 
 ## Installation
 
-`npm install tinyskeletonjs`
+`npm install @pixidream/tinyskeletonjs`
 
 ## Usage example
 

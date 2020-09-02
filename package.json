@@ -1,0 +1,20 @@
+{
+    "name": "tinyskeletonjs",
+    "displayName": "TinySkeletonJS",
+    "version": "0.0.1",
+    "description": "light skeleton compatible with any javascript framework",
+    "license": "MIT",
+    "repository": "Pixidream/TinySkeletonJS",
+    "main": "skeleton.min.js",
+    "keywords": [
+        "light",
+        "javascript",
+        "vuejs",
+        "angular",
+        "react",
+        "ember",
+        "skeleton",
+        "js",
+        "tiny"
+    ]
+}
